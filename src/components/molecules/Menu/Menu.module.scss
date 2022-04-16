@@ -1,0 +1,24 @@
+.menuWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
+    .logo{
+        width: 352px;
+        aspect-ratio: calc(2685/532);
+    }
+    .navbar{
+        display: flex;
+        width: 400px;
+        .menuList{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+    }
+}
