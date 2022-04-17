@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
+import "config/fontIcons";
 import "styles/global.module.scss";
 
 const root = ReactDOM.createRoot(
