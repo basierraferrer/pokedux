@@ -1,10 +1,10 @@
 import React from "react";
-import Menu from "components/molecules/Menu/Menu";
+import Home from "components/Template/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <Menu />
+      <Home />
     </div>
   );
 }
