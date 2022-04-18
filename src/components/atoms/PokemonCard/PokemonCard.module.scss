@@ -1,0 +1,37 @@
+.pokemonCard {
+    border-radius: 20px;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid rgba(34,36,38,.15);
+    box-shadow: 0.2em 0.4em 0.4em -0.2em #999;
+    display: flex;
+    flex-direction: column;
+
+    .favIcon{
+        align-self: flex-start;
+        &.favorite {
+            path {
+                fill: #e8c50a;
+            }
+        } 
+    }
+    .image{
+        align-self: center;
+    }
+
+    .title {
+        text-align: center;
+        color: #999;
+    }
+
+    .labels{
+        display: flex;
+        .label{
+            border: 1px solid #000;
+            border-radius: 8px;
+            padding: 0.2rem;
+            background: #B70E0E;
+            color: #FFFFFF;
+        }
+    }
+}
