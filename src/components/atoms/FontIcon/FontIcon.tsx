@@ -4,14 +4,23 @@ import {
   IconDefinition,
   findIconDefinition,
   IconName,
+  IconPrefix,
 } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const FontIcon = ({ iconName }: { iconName: IconName }) => {
-  const iconLookUp: IconLookup = { prefix: "fas", iconName };
+const FontIcon = ({
+  iconName,
+  prefix = "fas",
+  className = "",
+}: {
+  iconName: IconName;
+  prefix?: IconPrefix;
+  className?: string;
+}) => {
+  const iconLookUp: IconLookup = { prefix, iconName };
   const iconDefinition: IconDefinition = findIconDefinition(iconLookUp);
 
-  return <FontAwesomeIcon icon={iconDefinition} />;
+  return <FontAwesomeIcon className={className} icon={iconDefinition} />;
 };
 
 export default FontIcon;
